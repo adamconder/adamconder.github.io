@@ -1,0 +1,67 @@
+/*
+main.scss
+*/
+
+@import "vendor/boilerplate";
+
+@import "partials/variables";
+@import "partials/typography";
+@import "partials/grid";
+
+@import "layout/header";
+@import "layout/sub-banner";
+@import "layout/hero";
+@import "layout/projects";
+@import "layout/post";
+@import "layout/button";
+@import "layout/tags";
+
+body {
+	background-color: $banner-color;
+}
+
+.wrapper { 
+	display: table;
+	background-color: $white; 
+}
+.wrapper__inner { 
+	display: table;
+	width: 80%;
+	max-width: 1024px;
+	margin: 2.5em auto;
+	background-color: $white;
+}
+
+.content__inner {
+	section {
+		margin: 2em 0;
+	}
+}
+
+ul {
+	padding: 0 2.5em 0 0;
+	margin: 0;
+	list-style: none;
+
+		li {
+			font-size: 1.5em;
+			margin: 0.5em 0 0.25em 0;
+		}
+}
+
+.github { background-color: $teal; }
+.email { background-color: $orange; }
+.twitter { background-color: $twitter; }
+.linked-in { background-color: $linked-in; }
+
+.visually-hidden { 
+	text-indent: -9999px;
+	visibility: hidden;
+	position: absolute;
+   	top: -9999px;
+   	left: -9999px;
+}
+
+.home section {
+	margin: 0 0 2.5em 0;
+}
